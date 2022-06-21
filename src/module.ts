@@ -312,6 +312,14 @@ export const plugin = new PanelPlugin<PanelOptions>(PlotlyPanel)
         category: ['Secondary Y Axis'],
         showIf: (options) => options.showYAxis2 && options.series2.plotType === 'points',
       })
+      .addNumberInput({
+        path: 'size.font',
+        name: 'Text Font',
+        defaultValue:10,
+        settings: {
+          placeholder: 'auto',
+        },
+      })
       .addBooleanSwitch({
         path: 'showLegend',
         name: 'Show legend',

@@ -9,6 +9,7 @@ export interface PanelOptions {
   invertXAxis: boolean;
   series: SeriesOptions;
   series2: SeriesOptions;
+  size: SizeOption;
 }
 
 export interface AxisOptions {
@@ -46,4 +47,8 @@ export interface AxisLabels {
 export interface FieldOption {
   value: string;
   label: string;
+}
+
+export interface SizeOption {
+  font?: number;
 }

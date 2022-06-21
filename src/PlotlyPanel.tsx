@@ -297,11 +297,12 @@ const getLayout = (
   const yAxisTitle = options.displayVertically ? originalAxisTitleY : originalAxisTitleX;
   const showXAxis2 = options.showYAxis2 && !options.displayVertically;
   const showYAxis2 = options.showYAxis2 && options.displayVertically;
+  const fontsize=options.size.font;
   const layout: Partial<Plotly.Layout> = {
     margin: { r: 40, l: 40, t: 20, b: 40 },
     paper_bgcolor: theme.colors.panelBg,
     plot_bgcolor: theme.colors.panelBg,
-    font: { color: theme.colors.text },
+    font: { color: theme.colors.text,size:fontsize},
     xaxis: {
       fixedrange: true,
       automargin: true,
